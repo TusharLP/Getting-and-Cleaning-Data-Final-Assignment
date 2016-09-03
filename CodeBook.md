@@ -4,7 +4,7 @@ This file describes the variables, the data, and any transformations or work tha
 Source of original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-## Tasks performed by run_analysis.RW:
+## Tasks performed by run_analysis.R:
 * Reads the data from the folder in `X_train`-X_train.txt, `X_test`-X_test.txt, `y_train`-y_train.txt, `y_test`-y_test.txt, `subject_train`-subject_train.txt, `subject_test`-subject_test.txt and `features`-features.txt
 * Finds relevant features, that features with mean and standard deviation of the measurements, in `features` dataframe
 * Removes the irrelevant features from the `X_train` and `X_test` dataframes
@@ -19,6 +19,10 @@ Description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
     * Standing
     * Laying
 *  Finally creates a second, independent tidy data set 'tidydata.txt' with the average of each variable for each activity and each subject
+
+## Identifiers
+* `Subject` - The ID of the test subject. There are a total of 30 subjects
+* `Activities` - The type of activity performed when the corresponding measurements were taken
 
 ## Measurements
     [1] "tBodyAcc-MEAN-X"              
